@@ -3,6 +3,7 @@
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 html {
@@ -12,14 +13,61 @@ html {
 .main_header {
   width: 100vw;
   height: 100vh;
-  display: -ms-grid;
-  display: grid;
-  place-items: center;
   background-color: #baf756;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
 }
 
-h1 {
+.main_header h1 {
   color: black;
   font-size: 3rem;
+}
+
+.main_header h1:hover {
+  color: rgba(53, 53, 53, 0.809);
+  cursor: pointer;
+}
+
+.main_header p {
+  color: black;
+  font-size: 3rem;
+}
+
+.main_header p:hover {
+  color: rgba(127, 117, 229, 0.988);
+  cursor: pointer;
+}
+
+.main_header ul {
+  background-color: antiquewhite;
+  padding: 1rem 2rem;
+  width: 50vw;
+  text-align: center;
+}
+
+.main_header ul li {
+  background-color: aqua;
+  font-size: 2rem;
+  padding: 1rem 0;
+}
+
+.main_header ul li::after {
+  content: ' PARAS';
+}
+
+.main_header ul li:hover::after {
+  color: #402ff9;
 }
 /*# sourceMappingURL=main.css.map */
