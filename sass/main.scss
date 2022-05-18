@@ -7,19 +7,21 @@ html{
 // scss/sass superPower 👇👇
 
 // 1. operators 
-// 2. 
+// 2. varaibles
+
+$bg-color:rgb(186, 247, 86);
 
 .main_header{
     width: 100vw;
     height: 100vh;
     display: grid;
     place-items: center;
-    background-color: rgb(22, 214, 143);
+    background-color: $bg-color
 
 }
 
 h1{
-    color: blue;
+    color: rgb(0, 0, 0);
     // font-size: 2rem + 2rem;
     // font-size: 6rem - 4rem;
     font-size: 3rem * 1;
