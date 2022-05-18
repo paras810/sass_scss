@@ -1,3 +1,13 @@
+btn, .main_header div .blue_btn, .main_header div .red_btn {
+  color: white;
+  padding: .7rem 4rem;
+  font-size: 1.8rem;
+  text-transform: capitalize;
+  letter-spacing: .2rem;
+  cursor: pointer;
+  border-radius: 1rem;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -27,7 +37,6 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  border-radius: 1rem;
   gap: 1rem;
 }
 
@@ -75,7 +84,7 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  border-radius: 1rem;
+  gap: 1rem;
 }
 
 .main_header ul li {
@@ -94,5 +103,42 @@ html {
 
 .main_header ul li:hover::after {
   color: #402ff9;
+}
+
+.main_header div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+}
+
+.main_header div .blue_btn {
+  background-color: blue;
+  border: .1rem solid blue;
+}
+
+.main_header div .blue_btn:hover {
+  background-color: white;
+  color: blue;
+}
+
+.main_header div .red_btn {
+  background-color: #f74141;
+  border: 0.1rem solid #f74141;
+}
+
+.main_header div .red_btn:hover {
+  background-color: white;
+  color: #f74141;
 }
 /*# sourceMappingURL=main.css.map */

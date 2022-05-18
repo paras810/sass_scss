@@ -1,7 +1,8 @@
 @import './mixin';
 @import './var';
+@import './extend';
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -19,6 +20,7 @@ html {
 // 3. nesting
 // 4. "mixin and parameters"
 // 5.  'paratials' ex(_var.scss, _mixin.scss)
+// 6. extend 
 
 
 
@@ -34,11 +36,11 @@ html {
     // justify-content: center;
 
     // after mixin
-     @include flexProp;
-      gap: 1rem;
+    @include flexProp;
 
     h1 {
-      @include p_f_c(.4rem, 1.2rem);
+        @include p_f_c(.4rem, 1.2rem);
+
         &:hover {
             color: rgba(53, 53, 53, 0.809);
             cursor: pointer;
@@ -47,7 +49,7 @@ html {
     }
 
     p {
-     @include p_f_c(.6rem, 1.5rem);
+        @include p_f_c(.6rem, 1.5rem);
 
         &:hover {
             color: rgba(127, 117, 229, 0.988);
@@ -57,15 +59,15 @@ html {
     }
 
     ul {
-       background-color: white;
+        background-color: white;
         padding: 1rem 2rem;
-       
+
         // using mixin
         @include flexProp();
 
         li {
             background-color: $bg-color;
-           @include  p_f_c(.3rem, 2.8rem);
+            @include p_f_c(.3rem, 2.8rem);
 
             &::after {
                 content: ' PARAS';
@@ -78,5 +80,31 @@ html {
         }
     }
 
+    div {
+        @include flexProp;
+
+       
+
+        .blue_btn {
+            @extend btn;
+            background-color: blue;
+            border: .1rem solid blue;
+
+            &:hover{
+                background-color: white;
+                color:blue ;
+            }
+        }
+
+        .red_btn {
+             @extend btn;
+            background-color: rgb(247, 65, 65);
+            border: .1rem solid rgb(247, 65, 65);
+            &:hover{
+                background-color: white;
+                color:rgb(247, 65, 65) ;
+            }
+        }
+    }
 
 }
