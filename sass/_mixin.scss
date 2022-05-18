@@ -1,0 +1,17 @@
+
+@mixin flexProp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 1rem;
+}
+
+@mixin p_f_c($L_spc , $W_spc){
+    color: rgb(47, 48, 47);
+    font-size: 3rem ;
+    padding: 1rem 1rem;
+    text-transform: capitalize;
+    letter-spacing: $L_spc;
+    word-spacing: $W_spc;
+}

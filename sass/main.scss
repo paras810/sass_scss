@@ -1,4 +1,7 @@
-* {
+@import './mixin';
+@import './var';
+
+*{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -15,25 +18,10 @@ html {
 // 2. varaibles
 // 3. nesting
 // 4. "mixin and parameters"
+// 5.  'paratials' ex(_var.scss, _mixin.scss)
 
 
-$bg-color: rgb(69, 245, 145);
 
-@mixin flexProp {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
-@mixin p_f_c($L_spc , $W_spc){
-    color: rgb(0, 0, 0);
-    font-size: 3rem ;
-    padding: 1rem 1rem;
-    text-transform: capitalize;
-    letter-spacing: $L_spc;
-    word-spacing: $W_spc;
-}
 
 .main_header {
     width: 100vw;
@@ -69,7 +57,7 @@ $bg-color: rgb(69, 245, 145);
     }
 
     ul {
-        background-color: antiquewhite;
+       background-color: white;
         padding: 1rem 2rem;
        
         // using mixin

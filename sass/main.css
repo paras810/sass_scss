@@ -13,7 +13,7 @@ html {
 .main_header {
   width: 100vw;
   height: 100vh;
-  background-color: #45f591;
+  background-color: #f5a345;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -27,11 +27,12 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  border-radius: 1rem;
   gap: 1rem;
 }
 
 .main_header h1 {
-  color: black;
+  color: #2f302f;
   font-size: 3rem;
   padding: 1rem 1rem;
   text-transform: capitalize;
@@ -45,7 +46,7 @@ html {
 }
 
 .main_header p {
-  color: black;
+  color: #2f302f;
   font-size: 3rem;
   padding: 1rem 1rem;
   text-transform: capitalize;
@@ -59,7 +60,7 @@ html {
 }
 
 .main_header ul {
-  background-color: antiquewhite;
+  background-color: white;
   padding: 1rem 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -74,11 +75,12 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  border-radius: 1rem;
 }
 
 .main_header ul li {
-  background-color: #45f591;
-  color: black;
+  background-color: #f5a345;
+  color: #2f302f;
   font-size: 3rem;
   padding: 1rem 1rem;
   text-transform: capitalize;
