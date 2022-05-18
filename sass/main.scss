@@ -1,72 +1,94 @@
-*{
-padding: 0;margin: 0;box-sizing: border-box;
-// transition: all .3s linear;
-overflow-x: hidden;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    // transition: all .3s linear;
+    overflow-x: hidden;
 }
-html{
+
+html {
     font-size: 62.5%;
 }
-// scss/sass superPower 👇👇
 
+// scss/sass superPower 👇👇
 // 1. operators 
 // 2. varaibles
 // 3. nesting
+// 4. "mixin and parameters"
 
-$bg-color:rgb(186, 247, 86);
 
-.main_header{
-    width: 100vw;
-    height: 100vh;
-    background-color: $bg-color;
+$bg-color: rgb(69, 245, 145);
+
+@mixin flexProp {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 1rem;
+}
 
-    h1{
-        color: rgb(0, 0, 0);
-        font-size: 3rem * 1;
-      
-        &:hover{
+@mixin p_f_c($L_spc , $W_spc){
+    color: rgb(0, 0, 0);
+    font-size: 3rem ;
+    padding: 1rem 1rem;
+    text-transform: capitalize;
+    letter-spacing: $L_spc;
+    word-spacing: $W_spc;
+}
+
+.main_header {
+    width: 100vw;
+    height: 100vh;
+    background-color: $bg-color;
+
+    // before mixin
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+
+    // after mixin
+     @include flexProp;
+      gap: 1rem;
+
+    h1 {
+      @include p_f_c(.4rem, 1.2rem);
+        &:hover {
             color: rgba(53, 53, 53, 0.809);
             cursor: pointer;
         }
 
     }
-    p{
-        color: rgb(0, 0, 0);
-        font-size: 3rem * 1;
 
-        &:hover{
+    p {
+     @include p_f_c(.6rem, 1.5rem);
+
+        &:hover {
             color: rgba(127, 117, 229, 0.988);
             cursor: pointer;
         }
 
     }
 
-    ul{
+    ul {
         background-color: antiquewhite;
         padding: 1rem 2rem;
-        width: 50vw;
-        text-align: center;
+       
+        // using mixin
+        @include flexProp();
 
-        li{
-            background-color: aqua;
-            font-size: 2rem;
-            padding: 1rem 0;
+        li {
+            background-color: $bg-color;
+           @include  p_f_c(.3rem, 2.8rem);
 
-            &::after{
+            &::after {
                 content: ' PARAS';
             }
-            &:hover::after{
-             color: rgb(64, 47, 249);   
+
+            &:hover::after {
+                color: rgb(64, 47, 249);
             }
-            
+
         }
     }
-   
+
 
 }
-
-

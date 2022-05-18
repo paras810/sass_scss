@@ -13,7 +13,7 @@ html {
 .main_header {
   width: 100vw;
   height: 100vh;
-  background-color: #baf756;
+  background-color: #45f591;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -33,6 +33,10 @@ html {
 .main_header h1 {
   color: black;
   font-size: 3rem;
+  padding: 1rem 1rem;
+  text-transform: capitalize;
+  letter-spacing: 0.4rem;
+  word-spacing: 1.2rem;
 }
 
 .main_header h1:hover {
@@ -43,6 +47,10 @@ html {
 .main_header p {
   color: black;
   font-size: 3rem;
+  padding: 1rem 1rem;
+  text-transform: capitalize;
+  letter-spacing: 0.6rem;
+  word-spacing: 1.5rem;
 }
 
 .main_header p:hover {
@@ -53,14 +61,29 @@ html {
 .main_header ul {
   background-color: antiquewhite;
   padding: 1rem 2rem;
-  width: 50vw;
-  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .main_header ul li {
-  background-color: aqua;
-  font-size: 2rem;
-  padding: 1rem 0;
+  background-color: #45f591;
+  color: black;
+  font-size: 3rem;
+  padding: 1rem 1rem;
+  text-transform: capitalize;
+  letter-spacing: 0.3rem;
+  word-spacing: 2.8rem;
 }
 
 .main_header ul li::after {
