@@ -1,6 +1,13 @@
 *{
 padding: 0;margin: 0;box-sizing: border-box;
 }
+html{
+    font-size: 62.5%;
+}
+// scss/sass superPower 👇👇
+
+// 1. operators 
+// 2. 
 
 .main_header{
     width: 100vw;
@@ -13,5 +20,8 @@ padding: 0;margin: 0;box-sizing: border-box;
 
 h1{
     color: blue;
+    // font-size: 2rem + 2rem;
+    // font-size: 6rem - 4rem;
+    font-size: 3rem * 1;
 }
 
